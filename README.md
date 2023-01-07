@@ -1,0 +1,1 @@
+Ejercicio individual realizado durante el curso de Desarrollador Web Full Stack en Digital House
