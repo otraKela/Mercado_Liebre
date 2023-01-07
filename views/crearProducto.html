@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0625f444d8.js" crossorigin="anonymous"></script>
+
+    <link href="/css/normalize.css", rel="stylesheet">
+    <link href="/css/styles.css", rel="stylesheet">
+
+    <title>Crear producto</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="header-ppal">
+
+            <div class="logo-busqueda">
+                
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de ML">        
+                
+                <form class="form-busqueda">
+                    <input class="input-busqueda" type="text" placeholder="Buscar productos, marcas" >
+
+                    <button class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+            </div>
+
+            <div class="compra-cuotas">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <span>Comprá en cuotas y sin tarjeta de crédito</span>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href='#Ofertas'>Ofertas</a></li>
+                <li><a href='#'>Tiendas Oficiales</a></li>
+                <li><a href='#'>Vender</a></li>
+                <li><a href='#'>Ayuda</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a>Creá tu cuenta</a>
+                    <i class="fa-solid fa-id-card"></i>
+                </li>
+                <li>
+                    <a href='#'>Ingresá</a>
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </li>
+                <li>
+                    <a href='#'>Mis compras</a>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+        
+        <a href="#" class="boton-menu"><i class="fa-solid fa-bars"></i></a>
+        
+        <img class="banner" src="/images/img-home-banner.jpg" alt="Banner">
+        
+    </header>
+
+        <h4 class="h4-titulo">Crear un producto</h4>
+    <!-- Formulario -->
+        <form action="crear-producto" method="POST" class="form-crear-producto">
+
+            <div class="div-control">
+                <label for="nombre" class="label-control">Nombre del Producto</label>
+                <input type="text" name="nombre" id="nombre" class="control">
+            </div>
+
+            <div class="div-control">
+                <label for="precio" class="label-control">Precio</label>
+                <input type="text" name="precio" id="precio" placeholder="12345.67" class="control">
+            </div>
+
+            <div class="div-control">
+                <label for="categoria" class="label-control">Categoría</label>
+
+                <select name="categoria" id="categoria" class="control">
+                    <option value="hogar">Hogar</option>
+                    <option value="electro">Electro</option>
+                    <option value="Indumentaria">Indumentaria</option>
+                </select>
+            </div>
+
+            <div class="div-control">
+                <label for="ciudad" class="label-control">Ciudad</label>
+
+                <select name="ciudad" id="ciudad" class="control">
+                    <option value="bai">Buenos Aires</option>
+                    <option value="ros">Rosario</option>
+                    <option value="cba">Córdoba</option>
+                </select>
+            </div>
+
+            <div class="div-control">
+                <label for="descripcion" class="label-control">Descripción del Producto</label>
+                <textarea name="descripcion" id="descripcion" class="control"></textarea>
+            </div>
+
+            <div class="div-control">
+                <label for="enOferta" class="label-enOferta">En oferta</label>
+                <input type="radio" name="enOferta" id="enOferta">
+            </div>
+
+            <div class="div-botones">
+                <button type="reset">Borrar</button>
+
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+
+
+    
+
+</body>
+</html>
